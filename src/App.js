@@ -1,26 +1,65 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Game from './components/Game';
+// const squares = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+
+// const initialSquare = '';
+
+
+
+
+
 function App() {
+  
+  // const [activeSquare, setActiveSquare] = useState(initialSquare);
+  // // const [squares, setSquares ] = useState(squares)
+
+  // const clickSquare = (id) => {
+  //   setActiveSquare(id);
+    
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <Game />
+    // <div className="App">
+    //   This is a Tic Tac Toe game
+       
+    //   <div className='row'>
+    //     {
+    //       squares.map(square => {
+    //         if (square < 3) {
+    //           return <Tile key={square} id={square} click={clickSquare}/>
+
+    //         }
+    //       })
+    //     }
+    //   </div>
+    //   <div className='row'>
+    //     {
+    //       squares.map(square => {
+    //         if (square > 2 && square < 6) {
+    //           return <Tile key={square} id={square} click={clickSquare}/>
+
+    //         }
+    //       })
+    //     }
+    //   </div>
+    //   <div>
+    //     {
+    //       squares.map(square => {
+    //         if (square > 5) {
+    //           return <Tile key={square} id={square} click={clickSquare}/>
+
+    //         }
+    //       })
+    //     }
+    //   </div>
+
+    //   {activeSquare}
+    // </div>
+  )
 }
 
 export default App;
